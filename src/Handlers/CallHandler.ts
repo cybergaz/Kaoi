@@ -1,10 +1,10 @@
 import { MessageType } from '@adiwajshing/baileys'
 import WAClient from '../lib/WAClient'
 
-// export default class CallHandler {
-//     constructor(public client: WAClient) {}
+export default class CallHandler {
+    constructor(public client: WAClient) {}
 
-//     rejectCall = async (caller: string, callID: string): Promise<void> => {
+    rejectCall = async (caller: string, callID: string): Promise<void> => {
 //         const tag = this.client.generateMessageTag()
 //         const json = [
 //             'action',
@@ -31,6 +31,6 @@ import WAClient from '../lib/WAClient'
 //         ]
 
 //         await this.client.sendWA(`${tag},${JSON.stringify(json)}`)
-//         await this.client.sendMessage(caller, `I'm a Bot. I'm not able to pickup calls.`, MessageType.text)
-//     }
-// }
+//         await this.client.sendMessage(caller, `I'm a Bot. I rejected this call , owner will call you back.`, MessageType.text)
+    }
+}
